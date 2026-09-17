@@ -14,7 +14,10 @@ local S = minetest.get_translator("flowers")
 
 -- Map Generation
 
-dofile(minetest.get_modpath("flowers") .. "/mapgen.lua")
+-- генерация отключена: биомы MTG (grassland, deciduous_forest и т.д.) у нас не
+-- регистрируются (генерация у нас своя), из-за чего декорации
+-- этого файла падали в лог warning'ами "get_biome_list: failed to get biome"
+--dofile(minetest.get_modpath("flowers") .. "/mapgen.lua")
 
 
 --
